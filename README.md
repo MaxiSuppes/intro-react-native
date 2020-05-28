@@ -23,10 +23,8 @@ Crear un archivo ```environments.js``` en el directorio root y copiarle el conte
 
 *usingFakeApi*: True si se quieren usar los mocks o vacío si se quiere usar la API antes mencionada.  
 
-#### Run
-```expo start```
-
-Seguir las instrucciones que se muestran en la consola o en el navegador
+#### Run en Android o iOS
+Es necesario tener descargada la última versión de Expo en el celular. Luego correr el siguiente comando en la consola: ```expo start```. Escanear el código QR que aparece en la ventana del navegador que se abrió. (En Android se puede escanear desde dentro de la app, en iOS directamente con la cámara)
 
 ### Contenido:
 Cada una de las ramas contiene un ejemplo introductorio de algunas de las nociones principales de React.
