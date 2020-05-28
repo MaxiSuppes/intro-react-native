@@ -2,8 +2,8 @@ import Constants from "expo-constants";
 
 const ENV = {
     dev: {
-        apiUrl: '12312312',
-        usingFakeApi: '',
+        apiUrl: 'https://reqres.in/api',
+        usingFakeApi: false,
     },
     staging: {
         apiUrl: '',
