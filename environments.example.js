@@ -2,7 +2,7 @@ import Constants from "expo-constants";
 
 const ENV = {
     dev: {
-        apiUrl: '12312312',
+        apiUrl: '',
         usingFakeApi: '',
     },
     staging: {
