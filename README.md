@@ -37,6 +37,8 @@ Cada una de las ramas contiene un ejemplo introductorio de algunas de las nocion
 ```api-client``` Se usa un módulo para encapsular la comunicacion entre el cliente y la api. Los request se hacen a 
 una [API pública]( https://reqres.in) usando [fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch)
 
+```styling``` Grid con Flexbox con algún estilo específico para cada plataforma
+
 ```master``` Tiene el contenido total de todas las ramas anteriores 
 
 ### Que falta?
