@@ -39,6 +39,8 @@ una [API pública]( https://reqres.in) usando [fetch API](https://developer.mozi
 
 ```styling``` Grid con Flexbox con algún estilo específico para cada plataforma
 
+```async-storage``` Se guardan datos editados por el usuario en el Local Storage 
+
 ```master``` Tiene el contenido total de todas las ramas anteriores 
 
 ### Que falta?
