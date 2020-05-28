@@ -14,14 +14,16 @@ Es necesario tener instaladas las ultimas versiones LTS de **Node**, **npm** y *
 Ejecutar el comando ```yarn install``` en el root del proyecto
 
 #### Variables de entorno
-Crear un archivo ```.env``` en el directorio root y copiarle el contenido del archivo ```.env.example```.
+Crear un archivo ```environments.js``` en el directorio root y copiarle el contenido del archivo ```environments.example.js```.
 
-*REACT_APP_API_URL*: Estamos usando la API gratuita https://reqres.in/api
-*REACT_APP_USING_FAKE_API*: True si se quieren usar los mocks o vacío si se quiere usar la API antes mencionada.  
+*apiUrl*: Estamos usando la API gratuita https://reqres.in/api
+
+*usingFakeApi*: True si se quieren usar los mocks o vacío si se quiere usar la API antes mencionada.  
 
 #### Run
 ```expo start```
 
+Seguir las instrucciones que se muestran en la consola o en el navegador
 
 ### Contenido:
 Cada una de las ramas contiene un ejemplo introductorio de algunas de las nociones principales de React.
