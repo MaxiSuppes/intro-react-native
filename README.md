@@ -2,7 +2,10 @@
 
 ### Bootstrapping del proyecto:
 #### Pre-requisitos
-Es necesario tener instaladas las ultimas versiones LTS de **Node**, **npm** y **yarn**
+
+- Es necesario tener instaladas las ultimas versiones LTS de **Node** y **npm**: https://nodejs.org/en/download/
+
+- Instalar **yarn** globalmente según la siguiente guía: https://classic.yarnpkg.com/en/docs/install/
 
 #### Clone
 ```git clone https://github.com/MaxiSuppes/intro-react-native.git```
