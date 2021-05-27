@@ -14,8 +14,17 @@ const ENV = {
 };
 
 export function getEnvVars(env = Constants.manifest.releaseChannel) {
-    if (env === null || env === undefined || env === '') return ENV.dev;
-    if (env.indexOf('dev') !== -1) return ENV.dev;
-    if (env.indexOf('staging') !== -1) return ENV.staging;
-    if (env.indexOf('production') !== -1) return ENV.production;
+    switch (env) {
+        case 'development':
+            return ENV.dev;
+
+        case 'staging':
+            return ENV.staging;
+
+        case 'production':
+            return ENV.production;
+
+        default:
+            return ENV.dev;
+    }
 }
