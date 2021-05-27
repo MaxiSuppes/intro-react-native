@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Text, View, TextInput, Button, AsyncStorage, Keyboard} from "react-native";
+import {Text, View, TextInput, Button, Keyboard} from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {app} from '../app/app';
 
 class ProfileScreen extends Component {
@@ -24,7 +25,7 @@ class ProfileScreen extends Component {
     getAgeFromAsyncStorage() {
         AsyncStorage.getItem("@introReactNative:edad")
             .then((jsonString) => {
-                const jsonResponse = jsonString === null ? {} : JSON.parse(jsonString);
+                const jsonResponse = jsonString === null ? "" : JSON.parse(jsonString);
                 this.setState({age: jsonResponse.toString()});
             })
             .catch((error) => {
