@@ -62,5 +62,5 @@ buck-out/
 .expo/*
 web-build/
 
-# Environment variables
-environments.js
+# Environments variables
+/environments.js
