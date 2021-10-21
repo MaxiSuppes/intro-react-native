@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     elements23: {
         height: 70,
         width: "30%",
-        borderWidth: 2,
+        borderWidth: 5,
         borderColor: Platform.OS === 'ios' ? "red" : "blue",
     }
 });

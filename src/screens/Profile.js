@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Text, View, TextInput, Button, AsyncStorage, Keyboard} from "react-native";
+import {Text, View, TextInput, Button} from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {app} from '../app/app';
 
 class ProfileScreen extends Component {
@@ -22,9 +23,12 @@ class ProfileScreen extends Component {
     }
 
     getAgeFromAsyncStorage() {
+        // Sistema de almacenado asincrónico y no encriptado (ver SecureStore para datos encriptados: https://docs.expo.dev/versions/latest/sdk/securestore/).
+        // 6MB de memoria para guardar datos de nuestra app (se puede incrementar). Solo permite guardar strings.
+
         AsyncStorage.getItem("@introReactNative:edad")
             .then((jsonString) => {
-                const jsonResponse = jsonString === null ? '' : JSON.parse(jsonString);
+                const jsonResponse = jsonString === null ? "" : JSON.parse(jsonString);
                 this.setState({age: jsonResponse.toString()});
             })
             .catch((error) => {
