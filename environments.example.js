@@ -1,4 +1,4 @@
-import Constants from "expo-constants";
+import * as Updates from "expo-updates";
 
 const ENV = {
     dev: {
@@ -13,18 +13,13 @@ const ENV = {
     }
 };
 
-export function getEnvVars(env = Constants.manifest.releaseChannel) {
-    switch (env) {
-        case 'development':
-            return ENV.dev;
-
-        case 'staging':
-            return ENV.staging;
-
-        case 'production':
-            return ENV.production;
-
-        default:
-            return ENV.dev;
+export function getEnvVars(env = Updates.releaseChannel) {
+    // Release channels: https://docs.expo.dev/distribution/release-channels/
+    if (env.startsWith('staging')) {
+        return ENV.staging;
+    } else if (env.startsWith('production')) {
+        return ENV.production;
+    } else {
+        return ENV.dev;
     }
 }
